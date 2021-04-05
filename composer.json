@@ -1,0 +1,41 @@
+{
+    "name": "amirnajmi/laravelprofile",
+    "description": ":package_description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/amirnajmi/laravelprofile",
+    "keywords": ["Laravel", "LaravelProfile"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmirNajmi\\LaravelProfile\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AmirNajmi\\LaravelProfile\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmirNajmi\\LaravelProfile\\LaravelProfileServiceProvider"
+            ],
+            "aliases": {
+                "LaravelProfile": "AmirNajmi\\LaravelProfile\\Facades\\LaravelProfile"
+            }
+        }
+    }
+}
